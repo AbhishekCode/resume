@@ -133,7 +133,7 @@ var JQueryMobilePage = React.createClass({
     }
     return React.DOM.div(props,
 //         React.DOM.a({href:'http://www.indexzero.in/'},   TitleSection({title:'Abhishek Kumar Singh', headerTheme:this.props.headerTheme})),
-      JQueryMobileButton({href:'http://www.indexzero.in/'},'Abhishek Kumar Singh (Software Developer)'),  
+      JQueryMobileButton( onClick={this.App.destroy()}, {href:'http://www.indexzero.in/'},'Abhishek Kumar Singh (Software Developer)'),  
 //        TitleSection({title:'Abhishek Kumar Singh', headerTheme:this.props.headerTheme}),
       JQueryMobileHeader({title:this.props.title, headerTheme:this.props.headerTheme}),
       JQueryMobileContent(null, this.props.children),
