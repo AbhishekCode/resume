@@ -1,35 +1,3 @@
-/**
- * jQuery Mobile React Example
- *
- * Main application script.
- * For variety, this example is written in 100% JSHint-compliant JavaScript, not in JSX.
- *
- * Component structure:
- *
- * - App
- *   |-- JQueryMobilePage (one)
- *   |   |-- JQueryMobileHeader
- *   |   |-- JQueryMobileContent
- *   |   |   |-- PageOneContent
- *   |   |       |-- JQueryMobileButton
- *   |   |-- JQueryMobileFooter
- *   |-- JQueryMobilePage (two)
- *   |   |-- JQueryMobileHeader
- *   |   |-- JQueryMobileContent
- *   |   |   |-- PageTwoContent
- *   |   |       |-- JQueryMobileButton
- *   |   |-- JQueryMobileFooter
- *   |-- JQueryMobilePage (popup)
- *       |-- JQueryMobileHeader
- *       |-- JQueryMobileContent
- *       |   |-- PagePopUpContent
- *       |       |-- JQueryMobileButton
- *       |-- JQueryMobileFooter
- */
-
- /* global document, React */
-
-'use strict';
 
 /** Main application component. */
 var App = React.createClass({
@@ -43,7 +11,6 @@ var App = React.createClass({
       JQueryMobilePage({id:'four', title:'Skill'}, PageFourContent(null)),
       JQueryMobilePage({id:'five', title:'Projects'}, PageFiveContent(null)),
       JQueryMobilePage({id:'six', title:'Contact'}, PageSixContent(null))
-//      JQueryMobilePage({id:'popup', title:'Contact', headerTheme:'b'}, PagePopUpContent(null))
     );
   }
 });
