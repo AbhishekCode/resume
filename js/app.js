@@ -148,7 +148,7 @@ var PageTwoContent = React.createClass({
         React.DOM.ul(null , 'Responsibilities:',  
                     React.DOM.li(null,'Creating web application with ReactJS, nodeJS'),
                     React.DOM.li(null,'Creating cross plateform mobile apps using react-native'),
-                    React.DOM.li(null,'Writing functional and automation test'),
+                    React.DOM.li(null,'Writing functional and automation test')
                   ) ,   
         
         React.DOM.h4(null, 'BYOF Studios', React.DOM.code(null, ' (Game Developer: January 2015-Feb 2016)')),
