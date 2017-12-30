@@ -9,8 +9,8 @@ const styles = {
     display: "flex",
     flex: 1,
     flexDirection: "column",
-    alignItems: "center",
-    backgroundColor: "gray"
+    alignItems: "center"
+    // backgroundColor: "gray"
   }
 };
 class App extends Component {

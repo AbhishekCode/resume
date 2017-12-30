@@ -10,16 +10,21 @@ import resumedata from "./resumeData";
 import { getHeight, getWidth } from "../helpers/config";
 import resumeData from "./resumeData";
 
+const padding = getWidth() * 0.05 > 20 ? 20 : getWidth() * 0.05;
+const widthOfContent = getWidth() - padding * 2;
+
 const styles = {
   container: {
-    width: getWidth(),
+    width: widthOfContent < 1024 ? widthOfContent : 1024,
     maxWidth: 1024,
     display: "flex",
     flex: 1,
     flexDirection: "column",
     alignItems: "center",
-    padding: 20,
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    padding: padding,
+    wordWrap: "break-word",
+    boxShadow: "0px 30px 33px 0px #8e9494"
   }
 };
 
